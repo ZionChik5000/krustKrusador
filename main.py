@@ -13,13 +13,14 @@ clock = pygame.time.Clock()
 running = True
 
 def draw_map():
-    for h in range(len(level.map)):
-        for w in range(len(level.map[h])):
+    for h in range(len(level["map"])):
+        for w in range(len(level["map"][h])):
             screen.blit(
                 pygame.transform.scale(tile, (int(TILE_SIZE * cameraZoom), int(TILE_SIZE * cameraZoom))),
                 ((w * TILE_SIZE - cameraX) * cameraZoom + cameraXOffset,
                  (h * TILE_SIZE - cameraY) * cameraZoom + cameraYOffset)
             )
+
 
 while running:
     screen.fill(WHITE)
