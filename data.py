@@ -19,7 +19,7 @@ player = {
     "dmg": 2,
     "x": 10.0,
     "y": 20.0,
-    "speed": 5
+    "speed": 0.2
 }
 
 enemy = {
