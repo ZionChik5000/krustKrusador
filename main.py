@@ -1,14 +1,14 @@
 # TODO:
-# Implement player gravity
-# Implement player jumping
+# Fix player movement and collision detection
+# Fix player animation
 
 # WORK IN PROGRESS:
 # Collision detection is broken, isOnGround is always false
 
 # FIXME:
 # Broken player animation
-# Collision problems 1: Touching bottom part of the tile causes player to go thought up the tile.
-# Collision problems 2: if not touching the ground and touching the bottom part and also going to left/right direction causes player to immedeatly do to the opposide side of the tile.
+# Collision problem #1: Touching bottom part of the tile causes player to slowly pass throught up the tile.
+# Collision problem #2: if you touching the bottom part and also going to left/right direction causes player to immedeatly teleport to the opposide side of the tile and also going up one tile up if its possible.
 # Jump works wierdly. Is should just add +10 to gravitaton, but not just going up for duration of time.
 
 import pygame
@@ -194,10 +194,10 @@ def handlePlayerInput(delta_time, dy):
             running = False
         elif event.type == pygame.MOUSEWHEEL:
             if event.y > 0:
-                cameraZoom = max(0.5, min(cameraZoom + 0.1, 2.5))
+                cameraZoom = max(0.5, min(cameraZoom + 0.025, 2.5))
                 resizePlayerTextures()
             elif event.y < 0:
-                cameraZoom = max(0.5, min(cameraZoom - 0.1, 2.5))
+                cameraZoom = max(0.5, min(cameraZoom - 0.025, 2.5))
                 resizePlayerTextures()
 
     player["anyKeyPressed"] = any(keys)

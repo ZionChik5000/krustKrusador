@@ -8,7 +8,7 @@ TILE_SIZE = 32
 
 cameraX = 0.0
 cameraY = 0.0
-cameraZoom = 1.6
+cameraZoom = 1.5
 cameraXOffset = 0.0
 cameraYOffset = 0.0
 cameraFollowSpeed = 1.5
