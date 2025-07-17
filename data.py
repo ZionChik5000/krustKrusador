@@ -1,5 +1,5 @@
 import pygame
-FRAMERATE = 120
+FRAMERATE = 144
 WIDTH = 800
 HEIGHT = 600
 WHITE = (255, 255, 255)
@@ -8,10 +8,10 @@ TILE_SIZE = 32
 
 cameraX = 0.0
 cameraY = 0.0
-cameraZoom = 2.0
+cameraZoom = 1.6
 cameraXOffset = 0.0
 cameraYOffset = 0.0
-cameraFollowSpeed = 3.0
+cameraFollowSpeed = 1.5
 
 debugMode = False
 
@@ -21,12 +21,12 @@ player = {
     "dmg": 2,
     "x": 0.0,
     "y": 0.0,
-    "speed": 10.0,
+    "speed": 5.0,
     "gravity": 10,
     "fallingSpeed": 0.0,
     "isOnGround": False,
     "isJumping": False,
-    "jumpHeight": 5.0,
+    "jumpHeight": 10,
     "anyKeyPressed": False,
     "size": TILE_SIZE,
     "animationSpeed": 8.0,
