@@ -12,7 +12,7 @@ color_to_value = {
     (255, 0, 255): 2, # DOWN GROUND
     (255, 255, 255): 0, #AIR
     (255, 255, 0): 3, # WIN FLAG
-    (255, 255, 0): 4, #UP SIDE OF THE WIN FLAG
+    (255, 194, 14): 4, #UP SIDE OF THE WIN FLAG
 }
 
 result = [
