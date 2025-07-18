@@ -21,8 +21,8 @@ font = pygame.font.Font(None, 30)
 pygame.display.set_caption("Krust Krusador")
 
 TILE_TEXTURES = {
-    0: pygame.image.load("assets/empty.png").convert_alpha(),
     -1: pygame.image.load("assets/errorTile.png").convert_alpha(),
+    0: pygame.image.load("assets/empty.png").convert_alpha(),
     1: pygame.image.load("assets/tileUp.png").convert(),
     2: pygame.image.load("assets/tileBottom.png").convert(),
     3: pygame.image.load("assets/flagUp.png").convert_alpha(),
