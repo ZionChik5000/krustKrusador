@@ -88,6 +88,7 @@ def draw_map():
             
             rect = pygame.Rect(w * TILE_SIZE, h * TILE_SIZE, TILE_SIZE, TILE_SIZE)
             solidHitboxes.append(rect)
+                
 
 def drawPlayer():
     playerX = (player["x"] * player["size"] - cameraX) * cameraZoom + cameraXOffset

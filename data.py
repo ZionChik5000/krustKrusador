@@ -57,4 +57,5 @@ level = {
     ]
 }
 solidHitboxes = []
-winObjects = []
+solidObjects = [1, 2]
+winObjects = [3, 4]
