@@ -8,10 +8,11 @@ width, height = img.size
 rgb_matrix = [[img.getpixel((x, y)) for x in range(width)] for y in range(height)]
 
 color_to_value = {
-    (255, 0, 0): 1,
-    (255, 255, 255): 0,
-    (255, 255, 0): -1,
-    (255, 0, 255): 2
+    (255, 0, 0): 1, # UP GROUND
+    (255, 0, 255): 2, # DOWN GROUND
+    (255, 255, 255): 0, #AIR
+    (255, 255, 0): 3, # WIN FLAG
+    (255, 255, 0): 4, #UP SIDE OF THE WIN FLAG
 }
 
 result = [

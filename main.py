@@ -25,6 +25,8 @@ TILE_TEXTURES = {
     -1: pygame.image.load("assets/empty.png").convert_alpha(),
     1: pygame.image.load("assets/tileUp.png").convert(),
     2: pygame.image.load("assets/tileBottom.png").convert(),
+    3: pygame.image.load("assets/flagUp.png").convert_alpha(),
+    4: pygame.image.load("assets/flagDown.png").convert_alpha(),
     "default": pygame.image.load("assets/errorTile.png").convert()
 }
 
