@@ -12,11 +12,8 @@ color_to_value = {
     (255, 0, 255): 2, # DOWN GROUND
     (255, 255, 255): 0, # AIR
     (255, 255, 0): 3, # WIN FLAG
-<<<<<<< HEAD
     (200, 200, 0): 4, # UP SIDE OF THE WIN FLAG (changed color to avoid duplicate key)
-=======
     (255, 194, 14): 4, #UP SIDE OF THE WIN FLAG
->>>>>>> 883c0dcb198fdcea8c48c172efac9d112d28ebcb
 }
 
 result = [
